@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/68af263b7f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=M+PLUS+2&family=Nunito&family=Oswald:wght@500;700&family=Poppins:wght@200&family=Praise&family=Shippori+Antique&family=Source+Sans+Pro:wght@700&family=Ubuntu&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styleform.css">
+
+
+    <style>
+        :root {
+
+            --bg: #010103;
+            --border: .1rem solid rgba(255, 255, 255, .3);
+        }
+
+        * {
+            font-family: 'M PLUS 2', sans-serif;
+            font-family: 'Nunito', sans-serif;
+            font-family: 'Oswald', sans-serif;
+            font-family: 'Poppins', sans-serif;
+            font-family: 'Praise', cursive;
+            font-family: 'Shippori Antique', sans-serif;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-family: 'Ubuntu', sans-serif;
+
+        }
+
+        body {
+            background-color: black;
+            background-repeat: no-repeat;
+
+
+        }
+
+        ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            list-style-type: none;
+        }
+
+        li {
+            margin: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: wheat;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .icons>i {
+            margin: 15px;
+            color: aliceblue;
+        }
+
+        .img-body {
+            width: 700px;
+            margin: 0 auto;
+            margin-top: 90px;
+            text-align: center;
+            font-size: 30px;
+            color: white;
+        }
+
+        .background {
+            position: relative;
+            text-align: center;
+            color: white;
+            font-size: 35px;
+            font-weight: 700;
+        }
+
+        .background>img {
+            width: 100%;
+        }
+
+        .background>h1 {
+            position: absolute;
+            top: 128px;
+            left: 60px;
+        }
+
+        .background>p {
+            position: absolute;
+            top: 300px;
+            left: 60px;
+            font-weight: 100;
+            font-size: 18px;
+            color: rgb(75, 71, 71);
+        }
+
+        .black {
+            color: rgb(97, 34, 34);
+            margin-left: -65px;
+        }
+
+        .img-body>p {
+            text-align: justify;
+            font-size: 15px;
+            font-weight: 300;
+            color: grey;
+        }
+
+        .img-body>h2 {
+            font-size: 50px;
+            font-weight: 700;
+        }
+
+        .btnn {
+            margin-left: -560px;
+            padding: 10px;
+            width: 150px;
+            transition: padding .2s;
+            font-size: 20px;
+        }
+
+        .btnn:hover {
+            background-color: brown;
+        }
+
+        .one,
+        .stars,
+        .two {
+            color: aliceblue;
+            text-align: justify;
+            margin: 25px;
+        }
+
+        .box {
+            border: 2px solid wheat;
+            margin: 10px;
+        }
+
+        .stars {
+            text-align: center;
+            color: rgb(187, 124, 124);
+        }
+
+        .review {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            text-align: center;
+            margin-top: 30px;
+
+        }
+
+        .cutomer-rev,
+        .special {
+            text-align: center;
+            color: aliceblue;
+            font-size: 50px;
+            font-weight: 700;
+            margin-top: 50px;
+        }
+
+        .logo {
+            color: white;
+            margin-left: 10PX;
+            font-size: 20px;
+        }
+
+        .reg {
+            color: white;
+            font-size: 40px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .heal {
+            color: rgb(163, 102, 102);
+        }
+
+        #after {
+            display: none;
+            position: absolute;
+            top: 25px;
+            right: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="container-one" id="bd">
+        <div class="header">
+            <div class="logo">
+                <h3>IDEAL <span class="heal">HEALTH</span> CARE</h3>
+            </div>
+            <div class="links">
+                <ul>
+                    <a href="#aboutproduct">
+                        <li>About Product</li>
+                    </a>
+                    <a href="#Review">
+                        <li>Customer Review</li>
+                    </a>
+                    <a href="#form">
+                        <li>Form</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="icons">
+                <i id="before" class="fa-solid fa-magnifying-glass fa-2x"></i>
+                <input id="after" type="text" name="" id="" style="height: 30px;">
+                <i class="fa-solid fa-cart-arrow-down fa-2x"></i>
+            </div>
+        </div>
+        </div>
+        <!-- <div class="background">
+            <img class="backimg" src="images/home-img.jpeg" alt="">
+            <h1>FRESH COFFEE IN <br> <span class="black">THE MORNING</span></h1><br>
+            <p>KetoDiet Coffee a popular trend of scientific weight management. </p>
+        </div> -->
+        <div class="img-body" id="aboutproduct">
+            <h2>About Product</h2>
+            <img src="images/Champion-KetoDiet-Coffee-600x600-removebg-preview.png" alt="">
+            <h4 class="special">What <span class="heal">Makes Our</span> Coffee Special?</h4>
+            <p>Scientific weight management “ Fat Blacker + Ketosis Self Fuel” developed by the most professional R&D
+                team which proven is safe and easy weight loss aid
+                3 Key Elements : Energetic Boost Energy, Instant Breakdown Fat and Smart Sharpen Focus</p>
+            <a href=""><button class="btnn">Know More</button></a>
+        </div>
+
+    </section>
+    <h2 class="cutomer-rev">CUSTOMER'S <span class="heal">REVIEW</span></h2>
+    <section class="review" id="Review">
+        <div class="box">
+            <img src="images/quote-img.png" alt="" class="quote">
+            <p class="one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla sit libero nemo fuga
+                sequi nobis?
+                Necessitatibus aut laborum, nisi quas eaque laudantium consequuntur iste ex aliquam minus vel? Nemo.</p>
+            <img src="images/pic-3.png" class="user" alt="">
+            <h3>john deo</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/quote-img.png" alt="" class="quote">
+            <p class="two">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla sit libero nemo fuga
+                sequi nobis?
+                Necessitatibus aut laborum, nisi quas eaque laudantium consequuntur iste ex aliquam minus vel? Nemo.</p>
+            <img src="images/pic-3.png" class="user" alt="">
+            <h3>john deo</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="form" id="form">
+        <form action="/action_page.php">
+            <h2 class="reg">FILL <span class="heal">UP DETAILS</span></h2>
+            <div class="input-container">
+                <i class="fa fa-user icon fa-2x"></i>
+                <input class="input-field" type="text" placeholder="Username" name="usrnm">
+            </div>
+
+            <div class="input-container">
+                <i class="fa fa-envelope icon fa-2x"></i>
+                <input class="input-field" type="text" placeholder="Email" name="email">
+            </div>
+
+            <div class="input-container">
+                <i class="fa fa-phone icon fa-2x"></i>
+                <input class="input-field" type="number" placeholder="Phone Number" name="psw">
+            </div>
+
+            <button type="submit" class="btn">Register</button>
+        </form>
+
+    </section>
+
+    <script>
+        let before = document.getElementById('before')
+        let after = document.getElementById('after')
+        let bdy = document.getElementById('bd')
+        before.addEventListener('click', function () {
+            before.style.display = 'none'
+            after.style.display = 'block'
+
+        })
+
+    </script>
+</body>
+
+</html>
